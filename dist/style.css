@@ -1,0 +1,28 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+button {
+    border: none;
+    outline: none;
+    padding: 10px;
+    font: 400 1.5em 'Roboto', sans-serif;
+}
+.intro {
+    text-align: center;
+}
+.rName {
+    font: 5.5em 'Audiowide', cursive;
+}
+.rDesc {
+    font: italic 400 3em 'Roboto', sans-serif;
+}
+.home-burger {
+    height: 50%;
+    width: 50%;
+}

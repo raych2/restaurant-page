@@ -1,1 +1,5 @@
-alert('Hello world!');
+import renderInitialPage from './initial-page';
+
+renderInitialPage();
+
+showContent();
