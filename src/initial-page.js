@@ -1,11 +1,7 @@
-const renderInitialPage = () => {
+const content = document.getElementById('content');
 
-    const content = document.getElementById('content');
+const renderNavbar = () => {
     const nav = document.createElement('nav');
-    const restoIntro = document.createElement('div');
-    const restoName = document.createElement('div');
-    const restoDesc = document.createElement('div');
-    const burgerImg = document.createElement('img');
     let tabList = ['Home', 'Menu', 'Contact'];
     
     //create tabs to access menu and contact pages
@@ -14,11 +10,21 @@ const renderInitialPage = () => {
             let button = document.createElement('button');
             button.classList.add('tablink');
             button.innerText = tabList[i];
+            button.id = tabList[i];
             nav.append(button);
         }
     };
 
     createButton();
+
+    content.append(nav);
+};
+
+const renderInitialPage = () => {
+    const restoIntro = document.createElement('div');
+    const restoName = document.createElement('div');
+    const restoDesc = document.createElement('div');
+    const burgerImg = document.createElement('img');
 
     restoIntro.classList.add('intro');
     restoName.classList.add('rName');
@@ -29,11 +35,10 @@ const renderInitialPage = () => {
     burgerImg.src = 'images/burger-pexels-valeria-boltneva-1639565.jpg';
     burgerImg.classList.add('home-burger');
    
-    content.append(nav);
     restoIntro.append(restoName);
     restoIntro.append(restoDesc);
     restoIntro.append(burgerImg);
     content.append(restoIntro);
 };
 
-export default renderInitialPage
+export { renderNavbar, renderInitialPage };
