@@ -5,9 +5,12 @@
 }
 nav {
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
+    align-items: center;
 }
 button {
+    background-color: #ffffff;
     border: none;
     outline: none;
     padding: 10px;
@@ -25,4 +28,18 @@ button {
 .home-burger {
     height: 50%;
     width: 50%;
+}
+.menu {
+    margin-top: 20px;
+    text-align: center;
+    font: 3.5em 'Audiowide', cursive;
+}
+.b-section, .s-section, .d-section {
+    margin: 30px auto 5px auto;
+    text-align: center;
+    font: 400 2em 'Roboto', sans-serif;
+}
+.burger, .side, .drink {
+    text-align: center;
+    font: 300 1.5em 'Roboto', sans-serif;
 }
