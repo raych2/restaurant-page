@@ -4,30 +4,23 @@ import renderContact from './modules/contact';
 
 const content = document.getElementById('content');
 
+//load initial page
 renderNavbar();
 renderInitialPage();
 
-const homePage = document.getElementById('Home');
-const menuPage = document.getElementById('Menu');
-const contactPage = document.getElementById('Contact');
-
-function loadHome(e) {
-    content.innerHTML = '';
-    renderNavbar();
-    renderInitialPage();
+function loadPage(e) {
+    if(e.target.id === 'Menu') {
+        content.innerHTML = '';
+        renderNavbar();
+        renderMenu();
+    } else if (e.target.id === 'Contact') {
+        content.innerHTML = '';
+        renderNavbar();
+        renderContact();
+    } else {
+        content.innerHTML = '';
+        renderNavbar();
+        renderInitialPage();
+    }
 }
-function loadMenu(e) {
-    content.innerHTML = '';
-    renderNavbar();
-    renderMenu();
-}
-
-function loadContact(e) {
-    content.innerHTML = '';
-    renderNavbar();
-    renderContact();
-}
-
-homePage.addEventListener('click', loadHome);
-menuPage.addEventListener('click', loadMenu);
-contactPage.addEventListener('click', loadContact);
+document.addEventListener('click', loadPage);

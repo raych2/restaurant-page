@@ -4,7 +4,7 @@ const renderNavbar = () => {
     const nav = document.createElement('nav');
     let tabList = ['Home', 'Menu', 'Contact'];
     
-    //create tabs to access menu and contact pages
+    //create 'tabs' to access menu and contact pages
     function createButton() {
         for (let i = 0; i < tabList.length; i++) {
             let button = document.createElement('button');
@@ -21,12 +21,13 @@ const renderNavbar = () => {
 };
 
 const renderInitialPage = () => {
-    const restoIntro = document.createElement('div');
+    const restoContent = document.createElement('div');
     const restoName = document.createElement('div');
     const restoDesc = document.createElement('div');
     const burgerImg = document.createElement('img');
 
-    restoIntro.classList.add('intro');
+    restoContent.classList.add('pageContent');
+    restoContent.classList.add('intro');
     restoName.classList.add('rName');
     restoDesc.classList.add('rDesc');
     restoName.innerText = 'The Burger Club';
@@ -35,10 +36,10 @@ const renderInitialPage = () => {
     burgerImg.src = 'images/burger-pexels-valeria-boltneva-1639565.jpg';
     burgerImg.classList.add('home-burger');
    
-    restoIntro.append(restoName);
-    restoIntro.append(restoDesc);
-    restoIntro.append(burgerImg);
-    content.append(restoIntro);
+    restoContent.append(restoName);
+    restoContent.append(restoDesc);
+    restoContent.append(burgerImg);
+    content.append(restoContent);
 };
 
 export { renderNavbar, renderInitialPage };

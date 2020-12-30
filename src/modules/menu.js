@@ -1,5 +1,6 @@
 const renderMenu = () => {
     const content = document.getElementById('content');
+    const menuContent = document.createElement('div');
     const menuTitle = document.createElement('div');
     const burgerSection = document.createElement('div');
     const sideSection = document.createElement('div');
@@ -44,13 +45,14 @@ const renderMenu = () => {
     const sides = createMenuItem(sideObj, 'side', sideList);
     const drinks = createMenuItem(drinkObj, 'drink', drinkList);
 
-    content.append(menuTitle);
-    content.append(burgerSection);
-    content.append(mainList);
-    content.append(sideSection);
-    content.append(sideList);
-    content.append(drinkSection);
-    content.append(drinkList);
+    menuContent.append(menuTitle);
+    menuContent.append(burgerSection);
+    menuContent.append(mainList);
+    menuContent.append(sideSection);
+    menuContent.append(sideList);
+    menuContent.append(drinkSection);
+    menuContent.append(drinkList);
+    content.append(menuContent);
 }
 
 export default renderMenu;

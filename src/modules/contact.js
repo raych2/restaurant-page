@@ -1,5 +1,6 @@
 const renderContact = () => {
     const content = document.getElementById('content');
+    const contactContent = document.createElement('div');
     const contactTitle = document.createElement('div');
     const hoursTitle = document.createElement('div');
     const hoursSection = document.createElement('div');
@@ -24,13 +25,14 @@ const renderContact = () => {
     phoneSection.innerText = `415-123-4567`;
 
 
-    content.append(contactTitle);
-    content.append(hoursTitle);
-    content.append(hoursSection);
-    content.append(addressTitle);
-    content.append(addressSection);
-    content.append(phoneTitle);
-    content.append(phoneSection);
+    contactContent.append(contactTitle);
+    contactContent.append(hoursTitle);
+    contactContent.append(hoursSection);
+    contactContent.append(addressTitle);
+    contactContent.append(addressSection);
+    contactContent.append(phoneTitle);
+    contactContent.append(phoneSection);
+    content.append(contactContent);
 }
 
 export default renderContact;
