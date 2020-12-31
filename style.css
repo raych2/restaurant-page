@@ -23,6 +23,10 @@ button {
     padding: 10px;
     font: 400 1.5em 'Roboto', sans-serif;
 }
+button:hover {
+    color: #ffffff;
+    text-decoration: underline solid #FBAC0E 3px;
+}
 .intro {
     text-align: center;
 }
