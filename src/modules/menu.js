@@ -36,7 +36,7 @@ const renderMenu = () => {
         for(let item in obj) {
             const itemBox = document.createElement('div');
             itemBox.classList.add(type);
-            itemBox.innerHTML = `${item}&nbsp${obj[item]}`;
+            itemBox.innerHTML = `${item}<span>${obj[item]}</span>`;
             section.append(itemBox);
         }
     }
