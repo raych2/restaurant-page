@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background-image: url(images/burger-pexels-valeria-boltneva-1639565.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
 nav {
     display: flex;
     flex-direction: row;
@@ -10,7 +17,7 @@ nav {
     align-items: center;
 }
 button {
-    background-color: #ffffff;
+    background-color: transparent;
     border: none;
     outline: none;
     padding: 10px;
@@ -23,16 +30,17 @@ button {
     font: 5.5em 'Audiowide', cursive;
 }
 .rDesc {
-    font: italic 400 3em 'Roboto', sans-serif;
+    font: italic 400 2.5em 'Roboto', sans-serif;
 }
-.home-burger {
-    height: 50%;
-    width: 50%;
-}
+
 .menu, .contact {
     margin-top: 20px;
     text-align: center;
     font: 3.5em 'Audiowide', cursive;
+}
+span {
+    display: flex;
+    justify-content: center;
 }
 .b-section, .s-section, .d-section, .h-title, .a-title, .p-title {
     margin: 30px auto 5px auto;
