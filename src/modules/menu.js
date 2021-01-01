@@ -8,20 +8,42 @@ const renderMenu = () => {
     const mainList = document.createElement('div');
     const sideList = document.createElement('div');
     const drinkList = document.createElement('div');
-    let mainObj = {
-        'The Burger Club Standard': '$10',
-        'Old School Burger': '$8',
-        'Western Bacon Cheeseburger': '$12',
-        'Veggie Burger': '$10'
-    }
-    let sideObj = {
-        'Fries': '$3',
-        'Onion Rings': '$4'
-    }
-    let drinkObj = {
-        'Soda': '$3',
-        'Beer': '$8'
-    }
+    
+    let mainObj = [
+        {
+            name: 'The Burger Club Standard',
+            price: '$10'
+        },
+        {
+            name: 'Old School Burger',
+            price: '$8'
+        },
+        {
+            name: 'Veggie Burger',
+            price: '$10'
+        }
+    ];
+    let sideObj = [
+        {
+            name: 'Fries',
+            price: '$3'
+        },
+        {
+            name: 'Onion Rings',
+            price: '$4'
+        }
+    ];
+    let drinkObj = [
+        {
+            name: 'Soda',
+            price: '$3'
+        },
+        {
+            name: 'Beer',
+            price: '$8'
+        }
+    ];
+    
     menuContent.classList.add('menuContent');
     menuTitle.classList.add('menu');
     menuTitle.innerText = 'Menu';
@@ -32,11 +54,16 @@ const renderMenu = () => {
     drinkSection.classList.add('d-section');
     drinkSection.innerText = 'Drinks';
     
-    function createMenuItem(obj, type, section) {
-        for(let item in obj) {
+    function createMenuItem(arr, type, section) {
+        for(let i = 0; i < arr.length; i++) {
             const itemBox = document.createElement('div');
+            const name = document.createElement('div');
+            const price = document.createElement('div');
+            name.innerText = arr[i]['name'];
+            price.innerText = arr[i]['price'];
             itemBox.classList.add(type);
-            itemBox.innerHTML = `${item}<span>${obj[item]}</span>`;
+            itemBox.append(name);
+            itemBox.append(price);
             section.append(itemBox);
         }
     }

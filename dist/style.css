@@ -55,13 +55,10 @@ button:hover {
 }
 .menuContent {
     margin: 50px auto;
+    padding: 5px 20px 20px 20px;
     max-width: 30%;
     background-color: rgba(0,48,73,0.5);
     border-radius: 5px;
-}
-span {
-    display: flex;
-    justify-content: center;
 }
 .contactContent {
     margin: 50px auto;
@@ -74,6 +71,10 @@ span {
     text-align: center;
     font: 400 2em 'Roboto', sans-serif;
     color: #ffffff;
+}
+.burger, .side, .drink {
+    display: flex;
+    justify-content: space-between;
 }
 .burger, .side, .drink, .hours, .address, .phone {
     text-align: center;
