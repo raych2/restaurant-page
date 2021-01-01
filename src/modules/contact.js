@@ -19,7 +19,7 @@ const renderContact = () => {
     addressTitle.classList.add('a-title');
     addressTitle.innerText = 'Address';
     addressSection.classList.add('address');
-    addressSection.innerHTML = `123 Hayes St.<br>San Francisco, CA 12345`;
+    addressSection.innerHTML = `123 Burger St.<br>San Francisco, CA 12345`;
     phoneTitle.classList.add('p-title');
     phoneTitle.innerText = 'Phone';
     phoneSection.classList.add('phone');
