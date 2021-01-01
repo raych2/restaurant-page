@@ -35,7 +35,7 @@ button:hover {
 .restoContent {
     margin: 50px auto;
     max-width: 65%;
-    background-color: rgba(0,48,73,0.8);
+    background-color: rgba(0,48,73,0.5);
     border-radius: 5px;
 }
 .rName {
@@ -51,17 +51,32 @@ button:hover {
     margin-top: 20px;
     text-align: center;
     font: 3.5em 'Audiowide', cursive;
+    color: #ffffff;
+}
+.menuContent {
+    margin: 50px auto;
+    max-width: 30%;
+    background-color: rgba(0,48,73,0.5);
+    border-radius: 5px;
 }
 span {
     display: flex;
     justify-content: center;
 }
+.contactContent {
+    margin: 50px auto;
+    max-width: 30%;
+    background-color: rgba(0,48,73,0.5);
+    border-radius: 5px;
+}
 .b-section, .s-section, .d-section, .h-title, .a-title, .p-title {
     margin: 30px auto 5px auto;
     text-align: center;
     font: 400 2em 'Roboto', sans-serif;
+    color: #ffffff;
 }
 .burger, .side, .drink, .hours, .address, .phone {
     text-align: center;
     font: 300 1.5em 'Roboto', sans-serif;
+    color: #FBAC0E;
 }
