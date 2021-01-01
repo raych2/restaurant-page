@@ -24,9 +24,8 @@ const renderInitialPage = () => {
     const restoContent = document.createElement('div');
     const restoName = document.createElement('div');
     const restoDesc = document.createElement('div');
-    const burgerImg = document.createElement('img');
 
-    restoContent.classList.add('pageContent');
+    restoContent.classList.add('restoContent');
     restoContent.classList.add('intro');
     restoName.classList.add('rName');
     restoDesc.classList.add('rDesc');

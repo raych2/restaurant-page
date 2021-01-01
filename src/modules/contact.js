@@ -8,7 +8,8 @@ const renderContact = () => {
     const addressSection = document.createElement('div');
     const phoneTitle = document.createElement('div');
     const phoneSection = document.createElement('div');
-
+    
+    contactContent.classList.add('contactContent');
     contactTitle.classList.add('contact');
     contactTitle.innerText = 'Contact';
     hoursTitle.classList.add('h-title');

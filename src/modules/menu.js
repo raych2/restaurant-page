@@ -22,7 +22,7 @@ const renderMenu = () => {
         'Soda': '$3',
         'Beer': '$8'
     }
-
+    menuContent.classList.add('menuContent');
     menuTitle.classList.add('menu');
     menuTitle.innerText = 'Menu';
     burgerSection.classList.add('b-section');
